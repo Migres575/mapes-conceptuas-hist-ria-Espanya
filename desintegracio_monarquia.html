@@ -91,14 +91,23 @@
       transform: translateY(0);
     }
 
- #mermaid-container {
+#mermaid-container {
   background: white;
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   overflow-x: auto;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  max-height: 800px;     /* altura màxima més petita */
+  min-height: 300px;     /* altura mínima molt reduïda */
+}
+
+#mermaid-container .mermaid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 #mermaid-container .mermaid svg {
@@ -106,6 +115,7 @@
   height: auto;
   display: block;
   margin: 0 auto;
+  max-height: 750px;     /* limita la mida del diagrama */
 }
 
 
