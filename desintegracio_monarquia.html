@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La desintegració de la monarquia (1857-1868) - Mapa Conceptual</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1800px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid #2C3E50;
+    }
+
+    h1 {
+      color: #2C3E50;
+      font-size: 2.5em;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 1.1em;
+      margin-bottom: 15px;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 0 auto 30px;
+      text-align: center;
+      line-height: 1.6;
+      color: #555;
+      font-size: 1.05em;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 8px;
+    }
+
+    .controls button {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+    }
+
+    .controls button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    }
+
+    .controls button:active {
+      transform: translateY(0);
+    }
+
+    #mermaid-container {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      overflow-x: auto;
+      min-height: 1400px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    #mermaid-container .mermaid {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    #mermaid-container .mermaid svg {
+      max-width: 100%;
+      height: auto;
+      min-height: 1300px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .legend {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 8px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .legend-color {
+      width: 30px;
+      height: 20px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 2px solid #eee;
+      color: #999;
+      font-style: italic;
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+      .controls {
+        display: none;
+      }
+      .container {
+        box-shadow: none;
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+      .controls {
+        flex-direction: column;
+      }
+      .controls button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>La desintegració de la monarquia (1857-1868)</h1>
+      <p class="subtitle">Mapa Conceptual Complet</p>
+    </header>
+
+    <p class="intro">
+      Aquest període marca el declivi final de la monarquia d'Isabel II, caracteritzat per la inestabilitat política, la repressió governamental i el creixement de l'oposició que culminaria en la Revolució de 1868.
+    </p>
+
+    <div class="controls">
+      <button onclick="window.print()">🖨️ Imprimir / Guardar PDF</button>
+      <button onclick="descarregarImatge()">💾 Descarregar Imatge</button>
+      <button onclick="ajustarZoom(1.2)">🔍 Ampliar</button>
+      <button onclick="ajustarZoom(0.8)">🔎 Reduir</button>
+      <button onclick="reiniciarZoom()">🔄 Reiniciar Zoom</button>
+    </div>
+
+    <div id="mermaid-container">
+      <div class="mermaid">
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#E8F4F8','primaryTextColor':'#000','primaryBorderColor':'#2C3E50','lineColor':'#555','secondaryColor':'#FFF4E6','tertiaryColor':'#F0E8FF','fontSize':'14px'}}}%%
+
+graph TB
+    Title["<b>LA DESINTEGRACIÓ DE LA<br/>MONARQUIA 1857-1868</b>"]
+    
+    Title --> Reaccio["<b>🔄 LA REACCIÓ MODERADA</b>"]
+    
+    Reaccio --> Colp56["<b>⚔️ DESPRÉS DEL COLP 1856</b><br/>Reina torna nomenar<br/>Narváez president<br/>Restablir moderantisme<br/>més conservador i autoritari"]
+    
+    Colp56 --> Elec57["<b>🗳️ ELECCIONS 1857</b><br/>Majoria moderada<br/>Breu legislatura 1857-1858"]
+    
+    Elec57 --> Moyano["<b>📚 LLEI INSTRUCCIÓ PÚBLICA</b><br/>Ministre Moyano 1857<br/>Divisió ensenyament:<br/>Primària, secundària, universitària<br/>Inspecció Església<br/>sistema educatiu<br/>1900: 57% homes i 33%<br/>dones alfabetitzades<br/>Poc impacte de la llei"]
+    
+    Colp56 --> Mobilitz["<b>📢 MOBILITZACIONS</b><br/>Persistència cicle males collites<br/>Demòcrates, republicans<br/>Grups de jornalers<br/>Reclamen faena i salaris dignes<br/>Crema registres notarials<br/>Enfrontaments Guàrdia Civil<br/>150 condemnes a mort<br/>Intensitat repressió Narváez"]
+    
+    Title --> Unio["<b>🤝 GOVERN UNIONISTA<br/>O'DONNELL 1858-1863</b>"]
+    
+    Unio --> Juny58["<b>📅 JUNY 1858</b><br/>Reina confia govern O'Donnell<br/>Líder Unió Liberal<br/>Partit nascut confluència<br/>sectors moderats i progressistes"]
+    
+    Juny58 --> Corts58["<b>🏛️ CORTS ELECCIONS 1858</b><br/>Mostren majoria unionista<br/>Nou govern liberalitza<br/>Constitució 1845<br/>Disminuir control premsa<br/>Augmentar autonomia ajuntaments<br/>Nova Llei electoral<br/>amplia electors<br/>recupera província<br/>com a circumscripció<br/>Prosseguir expansió ferrocarril<br/>Reprendre desamortització civil<br/>Augmentar inversió obres públiques"]
+    
+    Unio --> Expansio["<b>💰 EXPANSIÓ ECONÒMICA</b><br/>Anys 1858-1866<br/>Increment recursos Hisenda<br/>Gastar en política exterior activa"]
+    
+    Expansio --> Colonial["<b>🌍 POTÈNCIA COLONIAL</b><br/>Operacions militars<br/>Refer imatge Espanya<br/>Fomentar nacionalisme espanyol<br/>Aglutinant interclassista<br/>Acontentar sectors exèrcit<br/>Campanyes caràcter internacional"]
+    
+    Colonial --> Cotxinxina["<b>⛵ EXPEDICIÓ COTXINXINA</b><br/>1858-1863<br/>Col·laboració amb França<br/>Justificada matança missioners<br/>Establir port potenciar<br/>enviament a Cuba<br/>culis xinesos<br/>règim semiesclavitud"]
+    
+    Colonial --> Marroc["<b>⚔️ CAMPANYES MILITARS<br/>DEL MARROC</b><br/>1859-1860<br/>Motivades disputes frontereres<br/>Triomf batalles Tetuan i Castillejos<br/>Capitalitzades per O'Donnell<br/>i progressista Prim<br/>Pau Wad-Ras<br/>Incorporació territori Ifni<br/>Ampliació plaça Ceuta"]
+    
+    Colonial --> Mexic["<b>🇲🇽 INTERVENCIÓ MÈXIC</b><br/>1862<br/>Amb francesos i britànics<br/>Exigir govern mexicà<br/>cobrament deutes endarrerits<br/>Espanyols i britànics<br/>acaben retirant-se<br/>desavinences amb francesos"]
+    
+    Title --> Crisi["<b>💥 CRISI FINAL DEL SISTEMA<br/>1863-1868</b>"]
+    
+    Crisi --> Radical63["<b>⚡ RADICALITZACIÓ<br/>AUTORITARISME</b><br/>Des del 1863<br/>Fort intervencionisme reina<br/>Confirmat per gran influència<br/>camarilles<br/>Busquen favor reial<br/>o governamental<br/>Provoca gran<br/>inestabilitat política"]
+    
+    Crisi --> Oposicio["<b>📚 OPOSICIÓ CREIXENT</b><br/>S'enfortia especialment<br/>àmbit universitari<br/>Crítiques règim isabel·lí<br/>Intel·lectuals demòcrates<br/>i republicans"]
+    
+    Oposicio --> NitSant["<b>🎓 NIT DE SANT DANIEL 1865</b><br/>Successos Universitat Madrid<br/>Professor republicà Emilio Castelar<br/>destituït seva càtedra<br/>Rector i estudiants protesten<br/>Puerta del Sol<br/>Manifestants violentament reprimits<br/>Nou estudiants morts<br/>Més cent ferits<br/>Centenar detencions<br/>Indigna opinió pública<br/>Augmenta impopularitat Narváez"]
+    
+    Crisi --> Exclusio["<b>🚫 EXCLUSIÓ ISABEL II</b><br/>Progressistes, demòcrates<br/>i republicans<br/>Responsabilitzen Isabel II<br/>Exclusa mal funcionament<br/>institucions<br/>Pronunciament única via<br/>accés al poder"]
+    
+    Crisi --> SanGil["<b>⚔️ REVOLTA SERGENTS<br/>CASERNA SAN GIL 1866</b><br/>Es converteix en<br/>revolta popular Madrid<br/>Durament reprimida"]
+    
+    Crisi --> Narvaez66["<b>🔒 GOVERN NARVÁEZ</b><br/>Tanca les Corts<br/>Estratègia defensiva repressió<br/>davant inestabilitat<br/>política i econòmica"]
+    
+    Crisi --> Crisi66["<b>📉 CRISI SUBSISTÈNCIES 1866</b><br/>Provoca augment preus<br/>Malestar popular<br/>Progressistes i demòcrates<br/>signen Pacte d'Oostende<br/>Posar fi monarquia Isabel II<br/>Formar govern provisional<br/>Convocar Corts Constituents<br/>mitjà sufragi universal masculí"]
+    
+    Crisi --> Oostende67["<b>🤝 PACTE OOSTENDE 1867</b><br/>S'incorporen els unionistes<br/>amb bona part cúpula militar<br/>Amplis sectors societat<br/>Coincideixen fer gir situació<br/>Ja no podia consistir<br/>només en canvi de govern"]
+
+    style Title fill:#2C3E50,stroke:#000,stroke-width:4px,color:#fff
+    style Reaccio fill:#FFE5CC,stroke:#E67E22,stroke-width:2px
+    style Colp56 fill:#FFE5CC,stroke:#E67E22,stroke-width:2px
+    style Elec57 fill:#FFF4E6,stroke:#E67E22,stroke-width:2px
+    style Moyano fill:#FFF9E6,stroke:#F39C12,stroke-width:2px
+    style Mobilitz fill:#FFCCCC,stroke:#C0392B,stroke-width:2px
+    style Unio fill:#E8F4F8,stroke:#3498DB,stroke-width:2px
+    style Juny58 fill:#D6EAF8,stroke:#3498DB,stroke-width:2px
+    style Corts58 fill:#E8F4F8,stroke:#3498DB,stroke-width:2px
+    style Expansio fill:#E8DAFF,stroke:#8E44AD,stroke-width:2px
+    style Colonial fill:#F0E8FF,stroke:#8E44AD,stroke-width:2px
+    style Cotxinxina fill:#F8F0FF,stroke:#8E44AD,stroke-width:2px
+    style Marroc fill:#F8F0FF,stroke:#8E44AD,stroke-width:2px
+    style Mexic fill:#F8F0FF,stroke:#8E44AD,stroke-width:2px
+    style Crisi fill:#FFD6D6,stroke:#C0392B,stroke-width:3px
+    style Radical63 fill:#FFCCCC,stroke:#C0392B,stroke-width:2px
+    style Oposicio fill:#FFCCCC,stroke:#C0392B,stroke-width:2px
+    style NitSant fill:#FFB3B3,stroke:#C0392B,stroke-width:2px
+    style Exclusio fill:#FFCCCC,stroke:#C0392B,stroke-width:2px
+    style SanGil fill:#FFB3B3,stroke:#C0392B,stroke-width:2px
+    style Narvaez66 fill:#FFCCCC,stroke:#C0392B,stroke-width:2px
+    style Crisi66 fill:#FFB3B3,stroke:#C0392B,stroke-width:2px
+    style Oostende67 fill:#FF9999,stroke:#C0392B,stroke-width:2px
+      </div>
+    </div>
+
+    <div class="legend">
+      <div class="legend-item">
+        <div class="legend-color" style="background:#FFE5CC;"></div>
+        <span>Reacció Moderada</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background:#E8F4F8;"></div>
+        <span>Govern Unionista</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background:#E8DAFF;"></div>
+        <span>Expansió i Colonialisme</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background:#FFF9E6;"></div>
+        <span>Reformes Educatives</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background:#FFD6D6;"></div>
+        <span>Crisi Final del Sistema</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      Elaboració pròpia — 2025
+    </div>
+  </div>
+
+  <script>
+    mermaid.initialize({ 
+      startOnLoad: true, 
+      theme: 'base',
+      securityLevel: 'loose',
+      flowchart: {
+        useMaxWidth: false,
+        htmlLabels: true,
+        curve: 'basis',
+        padding: 30,
+        nodeSpacing: 100,
+        rankSpacing: 150
+      }
+    });
+
+    let zoomLevel = 1;
+
+    function ajustarZoom(factor) {
+      zoomLevel *= factor;
+      const svg = document.querySelector('.mermaid svg');
+      if (svg) {
+        svg.style.transform = `scale(${zoomLevel})`;
+        svg.style.transformOrigin = 'top center';
+        svg.style.transition = 'transform 0.3s ease';
+      }
+    }
+
+    function reiniciarZoom() {
+      zoomLevel = 1;
+      const svg = document.querySelector('.mermaid svg');
+      if (svg) {
+        svg.style.transform = 'scale(1)';
+      }
+    }
+
+    function descarregarImatge() {
+      const svg = document.querySelector('.mermaid svg');
+      if (!svg) {
+        alert('Espereu que el diagrama es carregue completament');
+        return;
+      }
+
+      const serializer = new XMLSerializer();
+      const svgString = serializer.serializeToString(svg);
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      const img = new Image();
+
+      const svgBlob = new Blob([svgString], {type: 'image/svg+xml;charset=utf-8'});
+      const url = URL.createObjectURL(svgBlob);
+
+      img.onload = function() {
+        canvas.width = img.width * 2;
+        canvas.height = img.height * 2;
+        ctx.fillStyle = 'white';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+        canvas.toBlob(function(blob) {
+          const downloadUrl = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          const date = new Date().toISOString().split('T')[0];
+          a.href = downloadUrl;
+          a.download = `desintegracio-monarquia-${date}.png`;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+          URL.revokeObjectURL(downloadUrl);
+        });
+      };
+
+      img.src = url;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Història Contemporània d'Espanya— Portada</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #2C3E50;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      text-align: center;
+      color: #555;
+      margin-bottom: 40px;
+      font-size: 1.1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      width: 100%;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+
+    .card h2 {
+      color: #2C3E50;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .card a {
+      display: inline-block;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .card a:hover {
+      background: linear-gradient(135deg, #5a6bd6 0%, #653b91 100%);
+    }
+
+    footer {
+      margin-top: 50px;
+      color: #888;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Història Contemporània d'Espanya</h1>
+  <p class="subtitle">Etapes principals de la història del segle XIX</p>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Primera Guerra Carlina</h2>
+      <p>(1833–1840)</p>
+      <a href="primeraguerracarlina.html">Explora</a>
+    </div>
+
+    <div class="card">
+      <h2>Revolució Liberal</h2>
+      <p>(1840–1854)</p>
+      <a href="revolucioliberal.html">Explora</a>
+    </div>
+
+    <div class="card">
+      <h2>Dècada Moderada</h2>
+      <p>(1844–1854)</p>
+      <a href="decadamoderada.html">Explora</a>
+    </div>
+
+    <div class="card">
+      <h2>Bienni Progressista</h2>
+      <p>(1854–1856)</p>
+      <a href="bienniprogressita.html">Explora</a>
+    </div>
+
+    <div class="card">
+      <h2>Desintegració de la Monarquia</h2>
+      <p>(1868)</p>
+      <a href="desintegracio_monarquia.html">Explora</a>
+    </div>
+
+    <div class="card">
+      <h2>Sexenni Democràtic</h2>
+      <p>(1868–1874)</p>
+      <a href="sexenni_democratic.html">Explora</a>
+    </div>
+  </div>
+
+  <footer>
+    Miquel Gregori. Elaboració pròpia — 2025
+  </footer>
+</body>
+</html>

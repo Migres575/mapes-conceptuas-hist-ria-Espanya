@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera Guerra Carlina (1833-1840) - Mapa Conceptual</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+    <style>
+        @media print {
+            body {
+                margin: 0;
+                padding: 20px;
+            }
+            .controls {
+                display: none;
+            }
+            #mermaid-container {
+                page-break-inside: avoid;
+            }
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        
+        .controls {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+        
+        .controls button {
+            background: #8B0000;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .controls button:hover {
+            background: #660000;
+        }
+        
+        #mermaid-container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            color: #666;
+            font-style: italic;
+            border-top: 1px solid #ddd;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #8B0000;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Primera Guerra Carlina (1833-1840)</h1>
+        <p class="subtitle">Mapa Conceptual - Format A4 Horitzontal</p>
+        
+        <div class="controls">
+            <button onclick="window.print()">🖨️ Imprimir / Guardar com a PDF</button>
+            <button onclick="descarregarImatge()">💾 Descarregar com a Imatge</button>
+            <button onclick="ajustarZoom(1.2)">🔍 Ampliar</button>
+            <button onclick="ajustarZoom(0.8)">🔍 Reduir</button>
+        </div>
+        
+        <div id="mermaid-container">
+            <div class="mermaid">
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#FFE5E5','primaryTextColor':'#000','primaryBorderColor':'#8B0000','lineColor':'#333','secondaryColor':'#E5F5FF','tertiaryColor':'#F0FFE5','noteBkgColor':'#FFF5E5'}}}%%
+
+graph TB
+    Title["<b>PRIMERA GUERRA CARLINA 1833-1840</b>"]
+    
+    Title --> Context[<b>CONTEXT 1833</b><br/>Mort de Ferran VII<br/>Crisi de l'Antic Règim]
+    
+    Context --> Opcions[<b>DUES OPCIONS ENFRONTADES</b>]
+    
+    Opcions --> Carlins["<b>CARLINS</b><br/>Déu, Pàtria i Rei<br/>Legitimisme absolutista<br/>Altar i Tron<br/>Preeminència de l'Església<br/>Estructures Antic Règim<br/>Sistema foral particularista<br/>Contra centralització liberal"]
+    
+    Opcions --> Isabelins["<b>ISABELINS</b><br/>Suport alta noblesa<br/>Funcionaris reformistes<br/>Jerarquia eclesiàstica<br/>Burgesia<br/>Sectors populars<br/>Milícia Nacional"]
+    
+    Carlins --> ZonesC["<b>SUPORT CARLÍ</b><br/>Zones rurals:<br/>País Basc, Navarra<br/>Part Catalunya, Aragó, València"]
+    
+    ZonesC --> SectorsC["<b>SECTORS SOCIALS</b><br/>Clergat<br/>Petita noblesa<br/>Oficials reaccionaris<br/>Artesans arruïnats<br/>Llauradors arrendataris<br/>Camperols expulsats"]
+    
+    Carlins --> Internacional1["<b>SUPORT INTERNACIONAL</b><br/>Rússia, Prússia<br/>Àustria, Nàpols"]
+    
+    Isabelins --> Internacional2["<b>SUPORT INTERNACIONAL</b><br/>França, Regne Unit<br/>Quàdruple Aliança 1834"]
+    
+    Context --> Inici["<b>INICI CONFLICTE</b><br/>Carles Maria Isidre<br/>Manifest d'Abrantes<br/>Insurrecció armada<br/>Guerra civil<br/>Gran contingut social i ideològic"]
+    
+    Inici --> Etapes["<b>DESENVOLUPAMENT</b><br/>Partides armades<br/>Zones muntanyoses"]
+    
+    Etapes --> E1["<b>1833-1835</b><br/>Estabilització exèrcit carlí<br/>Mort Zumalacárregui 1835<br/>Setge de Bilbao<br/>Delimitar zones influència"]
+    
+    E1 --> E2["<b>1835-1837</b><br/>Moment crític regència<br/>Expedicions militars<br/>1836: Exèrcit a Andalusia<br/>1837: Carles Àustria<br/>Arriba portes Madrid<br/>Repel·lit per tropes liberals<br/>Baldomero Espartero<br/>Victòria Luchana"]
+    
+    E2 --> E3["<b>1837-1839</b><br/>Ofensiva isabelina<br/>Comandament Espartero<br/>Debilitat carlisme<br/>Escissió carlina:<br/>Transaccionistes Maroto<br/>Intransigents Cabrera<br/>CONVENI DE VERGARA 1839<br/>Manteniment furs<br/>Integració oficialitat carlina"]
+    
+    E3 --> E4["<b>1839-1840</b><br/>Partides Cabrera<br/>Resistència Maestrat<br/>Derrota 1840<br/>Retirada a França<br/>Exili pretendent carlí"]
+    
+    E4 --> Conseq["<b>CONSEQÜÈNCIES</b>"]
+    
+    Conseq --> Demo["<b>DEMOGRÀFIQUES</b><br/>150.000-200.000 morts<br/>País 13 milions habitants<br/>Represàlies i venjances<br/>Terror a la població"]
+    
+    Conseq --> Polit["<b>POLÍTIQUES</b><br/>Divisió liberalisme:<br/>Moderats vs Progressistes<br/>Militars al lideratge<br/>Protagonisme pronunciaments<br/>Fins 1874"]
+    
+    Conseq --> Econ["<b>ECONÒMIQUES</b><br/>Increment deute<br/>Condicionament desamortització<br/>Dificultat desenvolupament<br/>industrial"]
+    
+    style Title fill:#8B0000,stroke:#000,stroke-width:3px,color:#fff
+    style Context fill:#FFE5E5,stroke:#8B0000,stroke-width:2px
+    style Opcions fill:#FFF5E5,stroke:#FF8C00,stroke-width:2px
+    style Carlins fill:#FFB6C1,stroke:#8B0000,stroke-width:2px
+    style Isabelins fill:#ADD8E6,stroke:#00008B,stroke-width:2px
+    style ZonesC fill:#FFD6D6,stroke:#8B0000,stroke-width:1px
+    style SectorsC fill:#FFD6D6,stroke:#8B0000,stroke-width:1px
+    style Internacional1 fill:#FFD6D6,stroke:#8B0000,stroke-width:1px
+    style Internacional2 fill:#C6E5FF,stroke:#00008B,stroke-width:1px
+    style Inici fill:#FFF5E5,stroke:#FF8C00,stroke-width:2px
+    style Etapes fill:#E5F5E5,stroke:#228B22,stroke-width:2px
+    style E1 fill:#F0FFF0,stroke:#228B22,stroke-width:1px
+    style E2 fill:#F0FFF0,stroke:#228B22,stroke-width:1px
+    style E3 fill:#F0FFF0,stroke:#228B22,stroke-width:1px
+    style E4 fill:#F0FFF0,stroke:#228B22,stroke-width:1px
+    style Conseq fill:#FFF5E5,stroke:#FF8C00,stroke-width:2px
+    style Demo fill:#FFEBCD,stroke:#FF8C00,stroke-width:1px
+    style Polit fill:#FFEBCD,stroke:#FF8C00,stroke-width:1px
+    style Econ fill:#FFEBCD,stroke:#FF8C00,stroke-width:1px
+            </div>
+        </div>
+        
+        <div class="footer">
+            Elaboració pròpia – 2025
+        </div>
+    </div>
+    
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'base',
+            securityLevel: 'loose'
+        });
+        
+        let zoomLevel = 1;
+        
+        function ajustarZoom(factor) {
+            zoomLevel *= factor;
+            const container = document.querySelector('.mermaid svg');
+            if (container) {
+                container.style.transform = `scale(${zoomLevel})`;
+                container.style.transformOrigin = 'top center';
+            }
+        }
+        
+        function descarregarImatge() {
+            const svg = document.querySelector('.mermaid svg');
+            if (svg) {
+                const serializer = new XMLSerializer();
+                const svgString = serializer.serializeToString(svg);
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                const img = new Image();
+                
+                img.onload = function() {
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    ctx.fillStyle = 'white';
+                    ctx.fillRect(0, 0, canvas.width, canvas.height);
+                    ctx.drawImage(img, 0, 0);
+                    
+                    canvas.toBlob(function(blob) {
+                        const url = URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = 'primera-guerra-carlina-mapa-conceptual.png';
+                        a.click();
+                        URL.revokeObjectURL(url);
+                    });
+                };
+                
+                img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgString)));
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Dècada Moderada (1844-1854) - Mapa Conceptual</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid #2C3E50;
+    }
+
+    h1 {
+      color: #2C3E50;
+      font-size: 2.5em;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 1.1em;
+      margin-bottom: 15px;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 0 auto 30px;
+      text-align: center;
+      line-height: 1.6;
+      color: #555;
+      font-size: 1.05em;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 8px;
+    }
+
+    .controls button {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+    }
+
+    .controls button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    }
+
+    #mermaid-container {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      overflow-x: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #mermaid-container .mermaid {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    #mermaid-container .mermaid svg {
+      width: 100% !important;
+      height: auto !important;
+      max-width: 1200px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .legend {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 8px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .legend-color {
+      width: 30px;
+      height: 20px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 2px solid #eee;
+      color: #999;
+      font-style: italic;
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+      .controls {
+        display: none;
+      }
+      .container {
+        box-shadow: none;
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>La Dècada Moderada (1844-1854)</h1>
+      <p class="subtitle">Mapa Conceptual Complet</p>
+    </header>
+
+    <p class="intro">
+      Durant la Dècada Moderada (1844-1854), Espanya visqué un període de centralització, repressió i estabilització institucional sota els governs moderats, encapçalats per Narváez.
+    </p>
+
+    <div class="controls">
+      <button onclick="window.print()">🖨️ Imprimir / Guardar PDF</button>
+      <button onclick="descarregarImatge()">💾 Descarregar Imatge</button>
+      <button onclick="ajustarZoom(1.2)">🔍 Ampliar</button>
+      <button onclick="ajustarZoom(0.8)">🔎 Reduir</button>
+      <button onclick="reiniciarZoom()">🔄 Reiniciar Zoom</button>
+    </div>
+
+    <div id="mermaid-container">
+      <div class="mermaid">
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#E8F4F8','primaryTextColor':'#000','primaryBorderColor':'#2C3E50','lineColor':'#555','secondaryColor':'#FFF4E6','tertiaryColor':'#F0E8FF','fontSize':'16px'}}}%%
+
+graph TB
+    Title["<b>LA DÈCADA MODERADA<br/>1844-1854</b>"]
+    
+    Title --> Inici["<b>ELECCIONS 1844</b><br/>Majoria moderats<br/>Govern General Narváez"]
+    
+    Inici --> Objectiu["<b>OBJECTIU</b><br/>Clausurar etapa revolucionària<br/>Estabilització política<br/>Reformes institucionals<br/>Mesures repressives"]
+    
+    Inici --> Bases["<b>BASES DEL RÈGIM</b>"]
+    Inici --> Estat["<b>DESENVOLUPAMENT ESTAT<br/>LIBERAL MODERAT</b>"]
+    
+    Bases --> Oligarquia["<b>PREDOMINI OLIGARQUIA</b><br/>Noblesa<br/>Burgesia compradora<br/>béns nacionals<br/>Sectors financers<br/>Suport Corona"]
+    
+    Oligarquia --> NouOrdre["<b>NOU ORDRE SOCIAL</b><br/>Institucions liberals<br/>Òptica moderada<br/>Protegir de reacció carlina<br/>i classes populars"]
+    
+    Bases --> Const45["<b>CONSTITUCIÓ 1845</b><br/>Règim llibertats<br/>Model censatari"]
+    
+    Const45 --> Llei46["<b>LLEI ELECTORAL 1846</b><br/>Sufragi restringit<br/>Grans contribuents<br/>635.000 → 100.000 electors"]
+    
+    Const45 --> Premsa["<b>DECRET 1845</b><br/>Llibertat impremta<br/>Control governatiu<br/>Censura"]
+    
+    Bases --> Esglesia["<b>RELACIONS ESGLÉSIA</b>"]
+    
+    Esglesia --> Concordat["<b>CONCORDAT 1851</b><br/>Isabel II reconeix<br/>desamortització prèvia<br/>Estat manté Església<br/>Pressupost culte i clero<br/>Catolicisme religió oficial"]
+    
+    Estat --> Central["<b>CENTRALISME</b>"]
+    
+    Central --> Admin["<b>ADMINISTRACIÓ</b><br/>Lleis 1845<br/>Governadors civils<br/>Diputacions<br/>Ajuntaments"]
+    
+    Central --> Electoral["<b>SISTEMA ELECTORAL</b><br/>Districtes uninominals<br/>Control vot rural<br/>Manipulació resultats"]
+    
+    Central --> Juridic["<b>ORDRE JURÍDIC</b><br/>Codi Penal 1848<br/>Projecte Codi Civil 1851<br/>Llei funcionaris"]
+    
+    Central --> Fiscal["<b>REFORMA FISCAL</b><br/>Llei Mon-Santillán 1845<br/>Centralitza impostos<br/>Impost consum"]
+    
+    Central --> Ordre["<b>ORDRE PÚBLIC</b><br/>1844: Guàrdia Civil<br/>Substitueix Milícia Nacional<br/>Protegir propietats<br/>Zones rurals"]
+    
+    Central --> Instruccio["<b>INSTRUCCIÓ PÚBLICA</b><br/>Pla Pidal 1845<br/>Llei Moyano 1857<br/>Sistema mètric decimal"]
+    
+    Estat --> Crisi["<b>CRISI MODERANTISME</b>"]
+    
+    Crisi --> Inestabilitat["<b>INESTABILITAT POLÍTICA</b><br/>16 governs en 10 anys<br/>Influència camarilles<br/>Favor reial"]
+    
+    Crisi --> Carlisme47["<b>CARLISME 1847-1849</b><br/>Partides guerrilleres<br/>Pirineu català<br/>Guerra Matiners"]
+    
+    Crisi --> Cicle48["<b>REVOLUCIÓ 1848</b><br/>Barricades maig<br/>Madrid, Sevilla, Barcelona<br/>Dura repressió"]
+    
+    Cicle48 --> Democrat["<b>PARTIT DEMÒCRATA 1849</b><br/>Sufragi universal<br/>Llibertat associació<br/>Nuclis republicans"]
+    
+    Crisi --> Moderat["<b>PARTIT MODERAT</b><br/>Diferents corrents"]
+    
+    Moderat --> Conservador["<b>SECTOR CONSERVADOR</b><br/>Bravo Murillo 1852<br/>Reforma constitucional<br/>Dictadura tecnocràtica<br/>Fracassa"]
+    
+    Crisi --> Corrupcio["<b>1852-1854</b><br/>Desgast moderat<br/>Casos corrupció<br/>Contractes ferrocarril<br/>Sectors exèrcit<br/>opten pronunciament"]
+    
+    Estat --> Camarilles["<b>CAMARILLES ISABEL II</b><br/>Entorn reina<br/>Lluita influència<br/>Enorme poder polític"]
+
+    style Title fill:#2C3E50,stroke:#000,stroke-width:4px,color:#fff
+    style Inici fill:#E8F4F8,stroke:#2C3E50,stroke-width:2px
+    style Objectiu fill:#D6EAF8,stroke:#2C3E50,stroke-width:2px
+    style Bases fill:#FFF4E6,stroke:#E67E22,stroke-width:2px
+    style Oligarquia fill:#FFE5CC,stroke:#E67E22,stroke-width:2px
+    style NouOrdre fill:#FFEECC,stroke:#E67E22,stroke-width:2px
+    style Const45 fill:#E8DAFF,stroke:#8E44AD,stroke-width:2px
+    style Llei46 fill:#F0E8FF,stroke:#8E44AD,stroke-width:2px
+    style Premsa fill:#F0E8FF,stroke:#8E44AD,stroke-width:2px
+    style Esglesia fill:#E8F8E8,stroke:#27AE60,stroke-width:2px
+    style Concordat fill:#D4EFDF,stroke:#27AE60,stroke-width:2px
+    style Estat fill:#FFF9E6,stroke:#F39C12,stroke-width:2px
+    style Central fill:#FFEECC,stroke:#F39C12,stroke-width:2px
+    style Admin fill:#FFF4D9,stroke:#F39C12,stroke-width:2px
+    style Electoral fill:#FFF4D9,stroke:#F39C12,stroke-width:2px
+    style Juridic fill:#FFF4D9,stroke:#F39C12,stroke-width:2px
+    style Fiscal fill:#FFF4D9,stroke:#F39C12,stroke-width:2px
+    style Ordre fill:#FFF4D9,stroke:#F39C12,stroke-width:2px
+    style Instruccio fill:#FFF4D9,stroke:#F39C12,stroke-width:2px
+    style Crisi fill:#FFE5E5,stroke:#C0392B,stroke-width:2px
+    style Inestabilitat fill:#FFCCCC,stroke:#C0392B,stroke-width:2px
+    style Carlisme47 fill:#FFCCCC,stroke:#C0392B,stroke-width:2px
+    style Cicle48 fill:#FFCCCC,stroke:#C0392B,stroke-width:2px
+    style Democrat fill:#FFB3B3,stroke:#C0392B,stroke-width:2px
+    style Moderat fill:#FFCCCC,stroke:#C0392B,stroke-width:2px
+    style Conservador fill:#FFB3B3,stroke:#C0392B,stroke-width:2px
+    style Corrupcio fill:#FFCCCC,stroke:#C0392B,stroke-width:2px
+    style Camarilles fill:#E8DAFF,stroke:#8E44AD,stroke-width:2px
+      </div>
+    </div>
+
+    <div class="legend">
+      <div class="legend-item">
+        <div class="legend-color" style="background:#E8F4F8;"></div>
+        <span>Inici i context</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background:#FFF4E6;"></div>
+        <span>Bases del règim</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background:#E8DAFF;"></div>
+        <span>Institucions polítiques</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background:#E8F8E8;"></div>
+        <span>Relacions Església</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background:#FFF9E6;"></div>
+        <span>Desenvolupament estat</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background:#FFE5E5;"></div>
+        <span>Crisi</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      Elaboració pròpia — 2025
+    </div>
+  </div>
+
+  <script>
+    mermaid.initialize({ 
+      startOnLoad: true, 
+      theme: 'base',
+      securityLevel: 'loose',
+      flowchart: {
+        useMaxWidth: true,
+        htmlLabels: true,
+        curve: 'basis',
+        padding: 15,
+        nodeSpacing: 50,
+        rankSpacing: 70,
+        rankdir: 'TB',
+        align: 'center'
+      }
+    });
+
+    let zoomLevel = 1;
+
+    function ajustarZoom(factor) {
+      zoomLevel *= factor;
+      const svg = document.querySelector('.mermaid svg');
+      if (svg) {
+        svg.style.transform = `scale(${zoomLevel})`;
+        svg.style.transformOrigin = 'top center';
+        svg.style.transition = 'transform 0.3s ease';
+      }
+    }
+
+    function reiniciarZoom() {
+      zoomLevel = 1;
+      const svg = document.querySelector('.mermaid svg');
+      if (svg) {
+        svg.style.transform = 'scale(1)';
+      }
+    }
+
+    function descarregarImatge() {
+      const svg = document.querySelector('.mermaid svg');
+      if (!svg) {
+        alert('Espereu que el diagrama es carregue completament');
+        return;
+      }
+
+      const serializer = new XMLSerializer();
+      const svgString = serializer.serializeToString(svg);
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      const img = new Image();
+
+      const svgBlob = new Blob([svgString], {type: 'image/svg+xml;charset=utf-8'});
+      const url = URL.createObjectURL(svgBlob);
+
+      img.onload = function() {
+        canvas.width = img.width * 2;
+        canvas.height = img.height * 2;
+        ctx.fillStyle = 'white';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+        canvas.toBlob(function(blob) {
+          const downloadUrl = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          const date = new Date().toISOString().split('T')[0];
+          a.href = downloadUrl;
+          a.download = `decada-moderada-${date}.png`;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+          URL.revokeObjectURL(downloadUrl);
+        });
+      };
+
+      img.src = url;
+    }
+  </script>
+</body>
+</html>

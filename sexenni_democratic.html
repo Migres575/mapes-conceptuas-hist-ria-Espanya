@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Sexenni Democràtic (1868-1874) - Mapa Conceptual</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1900px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid #2C3E50;
+    }
+
+    h1 {
+      color: #2C3E50;
+      font-size: 2.5em;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 1.1em;
+      margin-bottom: 15px;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 0 auto 30px;
+      text-align: center;
+      line-height: 1.6;
+      color: #555;
+      font-size: 1.05em;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 8px;
+    }
+
+    .controls button {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+    }
+
+    .controls button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    }
+
+    #mermaid-container {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      overflow-x: auto;
+      min-height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    #mermaid-container .mermaid {
+      width: 100%;
+      max-width: 1400px;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    #mermaid-container .mermaid svg {
+      width: 100% !important;
+      height: auto !important;
+      max-width: 1400px;
+    }
+
+    .legend {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 8px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .legend-color {
+      width: 30px;
+      height: 20px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 2px solid #eee;
+      color: #999;
+      font-style: italic;
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+      .controls {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>El Sexenni Democràtic (1868-1874)</h1>
+      <p class="subtitle">Mapa Conceptual Complet</p>
+    </header>
+
+    <p class="intro">
+      El Sexenni Democràtic va ser un període de profundes transformacions polítiques i socials a Espanya, marcat per la Revolució de 1868, l'experiment democràtic, la monarquia d'Amadeu de Savoia i la Primera República.
+    </p>
+
+    <div class="controls">
+      <button onclick="window.print()">🖨️ Imprimir / Guardar PDF</button>
+      <button onclick="descarregarImatge()">💾 Descarregar Imatge</button>
+      <button onclick="ajustarZoom(1.2)">🔍 Ampliar</button>
+      <button onclick="ajustarZoom(0.8)">🔎 Reduir</button>
+      <button onclick="reiniciarZoom()">🔄 Reiniciar Zoom</button>
+    </div>
+
+    <div id="mermaid-container">
+      <div class="mermaid">
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#E8F4F8','primaryTextColor':'#000','primaryBorderColor':'#2C3E50','lineColor':'#555','secondaryColor':'#FFF4E6','tertiaryColor':'#F0E8FF','fontSize':'15px'}}}%%
+
+graph TB
+    Title["<b>EL SEXENNI DEMOCRÀTIC 1868-1874</b>"]
+    
+    Title --> Part1["<b>1. LA GLORIOSA REVOLUCIÓ 1868</b>"]
+    Title --> Part2["<b>2. GOVERN PROVISIONAL I<br/>CONSTITUCIÓ 1869</b>"]
+    Title --> Part3["<b>3. MONARQUIA AMADEU<br/>DE SAVOIA 1871-1873</b>"]
+    Title --> Part4["<b>4. LA PRIMERA REPÚBLICA<br/>1873-1874</b>"]
+    
+    Part1 --> Crisi["<b>CRISI TRIPLE</b>"]
+    Crisi --> CrisiF["Crisi financera<br/>Manca rendibilitat inversions<br/>ferroviàries<br/>Descens borsa"]
+    Crisi --> CrisiI["Crisi industrial<br/>Pujada preu matèria primera<br/>Tancament empreses"]
+    Crisi --> CrisiS["Crisi subsistències<br/>Males collites<br/>Encariment blat"]
+    
+    Part1 --> Setembre["<b>SETEMBRE 1868</b><br/>Revolta esquadra Cadis<br/>Topete, Prim, Serrano<br/>Manifest 'Espanya amb honra'"]
+    
+    Setembre --> Juntes["<b>MOVIMENT INSURRECCIONAL</b><br/>Juntes revolucionàries<br/>Demandes:<br/>Sufragi universal<br/>Dret associació<br/>Eliminació impost consums<br/>Educació franc<br/>Abolició pena mort"]
+    
+    Setembre --> GovProv1["<b>GOVERN PROVISIONAL</b><br/>Prim encapçala<br/>5 progressistes<br/>4 unionistes<br/>Serrano regent"]
+    
+    Part2 --> Eixos["<b>DOS EIXOS REFORMES</b>"]
+    
+    Eixos --> Demo["<b>DEMOCRATITZAR</b><br/>Sufragi universal masculí<br/>Ampliació llibertats:<br/>reunió, associació<br/>expressió, ensenyament<br/>Democratització ajuntaments"]
+    
+    Eixos --> Econ["<b>LIBERALITZAR ECONOMIA</b><br/>Lliure canvi<br/>Reduir tarifes<br/>Llei bases mines<br/>Crear pesseta<br/>Banc Espanya<br/>Eliminar impost consums"]
+    
+    Part2 --> Elec69["<b>ELECCIONS GENER 1869</b><br/>Sufragi universal masculí<br/>Corts Constituents"]
+    
+    Elec69 --> Const["<b>CONSTITUCIÓ 1869</b>"]
+    
+    Const --> Drets["Catàleg ampli drets<br/>Llibertats ciutadà<br/>Judici jurat<br/>Abolició pena mort<br/>Descentralització"]
+    
+    Const --> Monarq["Monarquia democràtica<br/>Limita Corona<br/>Reforça sobirania nacional<br/>Poder legislatiu<br/>Independència judicial"]
+    
+    Const --> Debat["Debat forma Estat<br/>Fractura bloc revolucionari<br/>Revoltes republicanes<br/>setembre-octubre 1869"]
+    
+    Part3 --> Cerca["<b>CERCA REI</b><br/>Corts estableixen regència<br/>Escollit Amadeu de Savoia<br/>Fill Víctor Manuel II<br/>Concepció democràtica"]
+    
+    Part3 --> Gener71["<b>GENER 1871</b><br/>Proclamat rei<br/>Dies després:<br/>Assassinat Prim"]
+    
+    Gener71 --> Fragment["<b>FRAGMENTACIÓ</b><br/>Partit Constitucionalista<br/>Sagasta<br/>Partit Radical<br/>Ruiz Zorrilla<br/>Gran inestabilitat"]
+    
+    Part3 --> ProblemasA["<b>PROBLEMES AMADEU</b>"]
+    
+    ProblemasA --> Guerres["Dues guerres:<br/>Alçament carlí 1872-1876<br/>Conflicte Cuba<br/>Crit Yara 1868"]
+    
+    ProblemasA --> OpRep["Oposició republicans<br/>Moviments insurreccionals<br/>Andalusia i Catalunya"]
+    
+    ProblemasA --> Obrer["Moviment obrer<br/>Influx Comuna París 1871<br/>Il·legalitat Internacional"]
+    
+    ProblemasA --> Elits["Elits tradicionals<br/>Liberalisme conservador<br/>Cánovas del Castillo<br/>Retorn Borbons"]
+    
+    ProblemasA --> Renuncia["<b>10 FEBRER 1873</b><br/>AMADEU RENUNCIA"]
+    
+    Part4 --> Proc["<b>PROCLAMACIÓ</b><br/>Corts decideixen República<br/>258 vots favor, 32 contra<br/>Govern Partit Radical<br/>President Estanislau Figueres<br/>Mantenir Constitució 1869"]
+    
+    Part4 --> Elec73["<b>ELECCIONS CONSTITUENTS</b><br/>Republicans guanyen 344 escons<br/>60% abstenció"]
+    
+    Part4 --> Dues["<b>DUES CONCEPCIONS</b>"]
+    
+    Dues --> Unit["Radicals i republicans unitaris<br/>Ruiz Zorrilla, Castelar<br/>República unitària<br/>Continuació procés 1869"]
+    
+    Dues --> Feder["Republicans federals<br/>Pi i Margall<br/>República federal<br/>Drets democràtics<br/>Laïcisme<br/>Abolició esclavitud<br/>Reformes socials"]
+    
+    Part4 --> Juny73["<b>JUNY 1873</b><br/>GOVERN PI I MARGALL"]
+    
+    Juny73 --> Const73["<b>PROPOSTA CONSTITUCIÓ<br/>FEDERAL 1873</b><br/>Nova divisió territorial<br/>Federació 17 estats<br/>Incloent Cuba i Puerto Rico<br/>Poder municipal, regional<br/>i federal<br/>Autonomia econòmica"]
+    
+    Juny73 --> RefSoc["<b>REFORMES SOCIALS</b><br/>Repartiment terres<br/>Devolució terres comunes<br/>Llei Jurats Mixtos<br/>Llei Benot protecció<br/>menors set anys"]
+    
+    Part4 --> Crisis["<b>GREUS PROBLEMES</b>"]
+    
+    Crisis --> Conf["Intensificació conflictes<br/>Carlisme Catalunya<br/>Províncies basques, Maestrat<br/>Guerra Cuba continua"]
+    
+    Crisis --> Intrans["Impaciència intransigents<br/>Societats obreres<br/>Milícies urbanes<br/>Llauradors andalusos<br/>Vaga Alcoi juliol<br/>Insurrecció popular"]
+    
+    Crisis --> Cant["<b>CANTONS FEDERALS</b><br/>Governs autònoms<br/>Legislació pròpia<br/>Cartagena, València<br/>Llevant i sud<br/>Aplicació estructura<br/>federal des de baix"]
+    
+    Crisis --> Aill["Aïllament internacional<br/>Excepte EUA i Suïssa<br/>Veïen règim revolucionari<br/>Perill estabilitat europea"]
+    
+    Part4 --> Pres["<b>PRESIDENTS</b>"]
+    
+    Pres --> PiM["Pi i Margall dimiteix<br/>Disjuntiva reprimir<br/>per armes"]
+    
+    PiM --> Salm["Salmerón nomena<br/>conservadors militars<br/>Pavía, Martínez Campos<br/>Frenar cantonalisme<br/>Abandona per desacord<br/>tribunals militars"]
+    
+    Salm --> Cast["Castelar republicà unitari<br/>Governa per decret<br/>Federals provoquen<br/>moció censura"]
+    
+    Part4 --> Liquid["<b>LIQUIDACIÓ REPÚBLICA</b>"]
+    
+    Cast --> Pavia["<b>3 GENER 1874</b><br/>COP ESTAT PAVÍA<br/>Guàrdia Civil irrompre Corts"]
+    
+    Pavia --> Serr["<b>RÈGIM AUTORITARI</b><br/>Coalició Serrano<br/>Dissoldre Corts<br/>Suspendre garanties<br/>Censura premsa<br/>Il·legalitzar federals<br/>Dissoldre Internacional"]
+    
+    Liquid --> Final["<b>29 DESEMBRE 1874</b><br/>PRONUNCIAMENT<br/>MARTÍNEZ CAMPOS<br/>A SAGUNT<br/>Proclama rei<br/>ALFONS XII"]
+
+    style Title fill:#2C3E50,stroke:#000,stroke-width:4px,color:#fff
+    style Part1 fill:#FFE5CC,stroke:#E67E22,stroke-width:3px
+    style Part2 fill:#E8F4F8,stroke:#3498DB,stroke-width:3px
+    style Part3 fill:#E8DAFF,stroke:#8E44AD,stroke-width:3px
+    style Part4 fill:#E8F8E8,stroke:#27AE60,stroke-width:3px
+    
+    style Crisi fill:#FFF4E6,stroke:#E67E22,stroke-width:2px
+    style CrisiF fill:#FFF9E6,stroke:#E67E22,stroke-width:1px
+    style CrisiI fill:#FFF9E6,stroke:#E67E22,stroke-width:1px
+    style CrisiS fill:#FFF9E6,stroke:#E67E22,stroke-width:1px
+    style Setembre fill:#FFD6A5,stroke:#E67E22,stroke-width:2px
+    style Juntes fill:#FFEECC,stroke:#E67E22,stroke-width:2px
+    style GovProv1 fill:#FFD6A5,stroke:#E67E22,stroke-width:2px
+    
+    style Eixos fill:#D6EAF8,stroke:#3498DB,stroke-width:2px
+    style Demo fill:#E8F4F8,stroke:#3498DB,stroke-width:2px
+    style Econ fill:#E8F4F8,stroke:#3498DB,stroke-width:2px
+    style Elec69 fill:#D6EAF8,stroke:#3498DB,stroke-width:2px
+    style Const fill:#C3E0F5,stroke:#3498DB,stroke-width:2px
+    style Drets fill:#E8F4F8,stroke:#3498DB,stroke-width:2px
+    style Monarq fill:#E8F4F8,stroke:#3498DB,stroke-width:2px
+    style Debat fill:#E8F4F8,stroke:#3498DB,stroke-width:2px
+    
+    style Cerca fill:#F0E8FF,stroke:#8E44AD,stroke-width:2px
+    style Gener71 fill:#E8DAFF,stroke:#8E44AD,stroke-width:2px
+    style Fragment fill:#F0E8FF,stroke:#8E44AD,stroke-width:2px
+    style ProblemasA fill:#E0D0F0,stroke:#8E44AD,stroke-width:2px
+    style Guerres fill:#F0E8FF,stroke:#8E44AD,stroke-width:2px
+    style OpRep fill:#F0E8FF,stroke:#8E44AD,stroke-width:2px
+    style Obrer fill:#F0E8FF,stroke:#8E44AD,stroke-width:2px
+    style Elits fill:#F0E8FF,stroke:#8E44AD,stroke-width:2px
+    style Renuncia fill:#D8C8E8,stroke:#8E44AD,stroke-width:2px
+    
+    style Proc fill:#D4EFDF,stroke:#27AE60,stroke-width:2px
+    style Elec73 fill:#D4EFDF,stroke:#27AE60,stroke-width:2px
+    style Dues fill:#C8E6C9,stroke:#27AE60,stroke-width:2px
+    style Unit fill:#E8F8E8,stroke:#27AE60,stroke-width:2px
+    style Feder fill:#E8F8E8,stroke:#27AE60,stroke-width:2px
+    style Juny73 fill:#B8E0D2,stroke:#27AE60,stroke-width:2px
+    style Const73 fill:#D4EFDF,stroke:#27AE60,stroke-width:2px
+    style RefSoc fill:#D4EFDF,stroke:#27AE60,stroke-width:2px
+    style Crisis fill:#FFD6D6,stroke:#C0392B,stroke-width:2px
+    style Conf fill:#FFCCCC,stroke:#C0392B,stroke-width:2px
+    style Intrans fill:#FFCCCC,stroke:#C0392B,stroke-width:2px
+    style Cant fill:#FFB3B3,stroke:#C0392B,stroke-width:2px
+    style Aill fill:#FFCCCC,stroke:#C0392B,stroke-width:2px
+    style Pres fill:#FFF4E6,stroke:#F39C12,stroke-width:2px
+    style PiM fill:#FFEECC,stroke:#F39C12,stroke-width:2px
+    style Salm fill:#FFEECC,stroke:#F39C12,stroke-width:2px
+    style Cast fill:#FFEECC,stroke:#F39C12,stroke-width:2px
+    style Liquid fill:#FF9999,stroke:#C0392B,stroke-width:3px
+    style Pavia fill:#FFB3B3,stroke:#C0392B,stroke-width:2px
+    style Serr fill:#FFCCCC,stroke:#C0392B,stroke-width:2px
+    style Final fill:#FF8080,stroke:#C0392B,stroke-width:3px
+      </div>
+    </div>
+
+    <div class="legend">
+      <div class="legend-item">
+        <div class="legend-color" style="background:#FFE5CC;"></div>
+        <span>1. La Gloriosa Revolució (1868)</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background:#E8F4F8;"></div>
+        <span>2. Govern Provisional i Constitució 1869</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background:#E8DAFF;"></div>
+        <span>3. Monarquia Amadeu de Savoia</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background:#E8F8E8;"></div>
+        <span>4. Primera República</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background:#FFD6D6;"></div>
+        <span>Problemes i crisi</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      Elaboració pròpia — 2025
+    </div>
+  </div>
+
+  <script>
+    mermaid.initialize({ 
+      startOnLoad: true, 
+      theme: 'base',
+      securityLevel: 'loose',
+      flowchart: {
+        useMaxWidth: true,
+        htmlLabels: true,
+        curve: 'basis',
+        padding: 20,
+        nodeSpacing: 60,
+        rankSpacing: 80
+      }
+    });
+
+    let zoomLevel = 1;
+
+    function ajustarZoom(factor) {
+      zoomLevel *= factor;
+      const svg = document.querySelector('.mermaid svg');
+      if (svg) {
+        svg.style.transform = `scale(${zoomLevel})`;
+        svg.style.transformOrigin = 'top center';
+        svg.style.transition = 'transform 0.3s ease';
+      }
+    }
+
+    function reiniciarZoom() {
+      zoomLevel = 1;
+      const svg = document.querySelector('.mermaid svg');
+      if (svg) {
+        svg.style.transform = 'scale(1)';
+      }
+    }
+
+    function descarregarImatge() {
+      const svg = document.querySelector('.mermaid svg');
+      if (!svg) {
+        alert('Espereu que el diagrama es carregue completament');
+        return;
+      }
+
+      const serializer = new XMLSerializer();
+      const svgString = serializer.serializeToString(svg);
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      const img = new Image();
+
+      const svgBlob = new Blob([svgString], {type: 'image/svg+xml;charset=utf-8'});
+      const url = URL.createObjectURL(svgBlob);
+
+      img.onload = function() {
+        canvas.width = img.width * 2;
+        canvas.height = img.height * 2;
+        ctx.fillStyle = 'white';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+        canvas.toBlob(function(blob) {
+          const downloadUrl = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          const date = new Date().toISOString().split('T')[0];
+          a.href = downloadUrl;
+          a.download = `sexenni-democratic-${date}.png`;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+          URL.revokeObjectURL(downloadUrl);
+        });
+      };
+
+      img.src = url;
+    }
+  </script>
+</body>
+</html>
